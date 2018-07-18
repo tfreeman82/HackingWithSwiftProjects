@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    
+
     @IBOutlet weak var imageView: UIImageView!
     var selectedImage: String?
     
@@ -29,7 +29,7 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         navigationItem.largeTitleDisplayMode = .never
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false;
@@ -48,15 +48,15 @@ class DetailViewController: UIViewController {
     override func prefersHomeIndicatorAutoHidden() -> Bool {
         return navigationController?.hidesBarsOnTap ?? false
     }
-    
+
     /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
