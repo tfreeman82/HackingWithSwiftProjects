@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  StormViewer
+//  EasyBrowserP4
 //
-//  Created by Tristan Freeman on 7/17/18.
+//  Created by Tristan Freeman on 7/18/18.
 //  Copyright © 2018 Tristan Freeman. All rights reserved.
 //
 
