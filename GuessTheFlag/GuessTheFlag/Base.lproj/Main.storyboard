@@ -22,25 +22,32 @@
                                 <rect key="frame" x="87" y="100" width="200" height="100"/>
                                 <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AX2-yB-Hir">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AX2-yB-Hir">
                                 <rect key="frame" x="87" y="230" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="us"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk9-JV-LOw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk9-JV-LOw">
                                 <rect key="frame" x="87" y="360" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="us"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Tr3-C2-pYt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="52p-9p-qKV"/>
+                            <constraint firstItem="AX2-yB-Hir" firstAttribute="top" secondItem="Tr3-C2-pYt" secondAttribute="bottom" constant="30" id="Gc3-lw-Scv"/>
                             <constraint firstItem="Tr3-C2-pYt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MLG-k7-pf8"/>
+                            <constraint firstItem="Fk9-JV-LOw" firstAttribute="centerX" secondItem="AX2-yB-Hir" secondAttribute="centerX" id="WyD-Sn-NVs"/>
+                            <constraint firstItem="AX2-yB-Hir" firstAttribute="centerX" secondItem="Tr3-C2-pYt" secondAttribute="centerX" id="Ynq-04-D6u"/>
+                            <constraint firstItem="Fk9-JV-LOw" firstAttribute="top" secondItem="AX2-yB-Hir" secondAttribute="bottom" constant="30" id="xBi-W4-EeY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="RNl-y1-exo"/>
+                    <connections>
+                        <outlet property="button1" destination="Tr3-C2-pYt" id="VVk-i2-fCg"/>
+                        <outlet property="button2" destination="AX2-yB-Hir" id="P3h-Lq-YPb"/>
+                        <outlet property="button3" destination="Fk9-JV-LOw" id="fti-r4-U5e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
